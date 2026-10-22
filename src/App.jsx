@@ -21,17 +21,11 @@ function App() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-xs">
         <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">
-                R5.06 / R5.08 — Développement Web React
-              </span>
-              <h1 className="text-2xl font-black text-slate-900">
-                TD React — Découvrir les API
-              </h1>
-            </div>
-
             {/* Sélecteur d'onglets pour naviguer entre les exercices */}
-            <nav className="flex flex-wrap gap-1.5" aria-label="Navigation des exercices">
+            <nav
+              className="flex flex-wrap gap-1.5 opacity-0 hover:opacity-100"
+              aria-label="Navigation des exercices"
+            >
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
